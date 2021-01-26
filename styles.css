@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+background-image: url('./images/bg.jpg'); 
+height:100%;
+width: 100%;
+
+background-size: cover;
+background-position: center center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+width: 800px;
+margin: 30px auto;
+color:#fff;
+text-align:center;
+}
+
+h1, h2, h3 {
+    font-family:"Poppins", "sans-serif";
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+#seconds, #tens{
+  font-size:5rem;
+  color: white;
+
+  
+}
+span {
+  font-size: 5rem;
+}
+
+button{
+@include corners (5px);
+background:#5481a4;
+border-radius: 30px;
+color: #fff;
+border: solid 1px #fca311;
+text-decoration:none;
+cursor:pointer;
+font-size:1.2em;
+padding:18px 10px;
+width:180px;
+margin: 10px;
+outline: none;
+}
+  
+&:hover{
+@include transition;
+background: #fff;
+border: solid 1px #fff;
+color: #ffa600;
+}
+
+
+
+
+
+
+
